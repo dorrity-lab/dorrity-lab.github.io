@@ -1,0 +1,52 @@
+site_name: Dorrity Lab
+site_author: Michael Dorrity
+site_description: Developmental Biology Research
+
+nav:
+  - Research: research.md
+  - Publications: publications.md
+  - People: people.md
+  - Resources: resources.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  logo: assets/images/logo/favicon/logo-2024-finals-02.png
+  favicon: assets/images/logo/favicon/logo-2024-finals-02.png
+  palette:
+    # Light mode - minimalist grey aesthetic
+    scheme: default
+    primary: white
+    accent: blue grey
+  font:
+    text: Optima #Frutiger
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+# Repository info (update with your actual repo)
+repo_url: https://github.com/dorrity-lab/dorritylab.github.io
+repo_name: dorrity-lab/dorritylab.github.io
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/image-variants.css
+  - stylesheets/video-backgrounds.css
+
+extra_javascript:
+  - javascripts/people.js
+
+copyright: |
+  &copy; 2026 <a href="https://github.com/dorrity-lab" target="_blank" rel="noopener">Dorrity Lab</a>

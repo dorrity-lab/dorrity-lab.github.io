@@ -1,0 +1,5 @@
+# MkDocs Material for website building
+mkdocs-material>=9.0.0
+
+# For ORCID publication fetching script
+requests>=2.31.0
