@@ -50,9 +50,3 @@ Using combinatorial-indexing based readouts, we build tools that profile cellula
 
 ---
 
-<div class="image-gallery-2col">
-  <img src="../assets/images/research/notochord-trajectory-pca-time.png" alt="Notochord trajectory">
-  <img src="../assets/images/research/drer-composition-traj-2d.png" alt="Trajectory composition">
-</div>
-
-</div>

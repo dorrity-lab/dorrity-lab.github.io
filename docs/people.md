@@ -18,6 +18,17 @@
 
 <div class="people-grid-faces">
 
+
+<a href="kneeshaw/" class="person-face-card">
+  <div class="person-face-inner">
+    <img src="../assets/images/people/kneeshaw.jpg" alt="Sophie Kneeshaw" class="person-face-photo">
+    <div class="person-face-overlay">
+      <p class="person-face-name">Sophie Kneeshaw</p>
+      <p class="person-face-role">Lab Officer</p>
+    </div>
+  </div>
+</a>
+
 <a href="bucao/" class="person-face-card">
   <div class="person-face-inner">
     <img src="../assets/images/people/Christa_Bucao.jpg" alt="Christabel Bucao" class="person-face-photo">
@@ -138,16 +149,6 @@
   </div>
 </a>
 
-<a href="kneeshaw/" class="person-face-card">
-  <div class="person-face-inner">
-    <img src="../assets/images/people/kneeshaw.jpg" alt="Sophie Kneeshaw" class="person-face-photo">
-    <div class="person-face-overlay">
-      <p class="person-face-name">Sophie Kneeshaw</p>
-      <p class="person-face-role">Lab Officer</p>
-    </div>
-  </div>
-</a>
-
 <a href="seyda/" class="person-face-card">
   <div class="person-face-inner">
     <img src="../assets/images/people/Cem_Seyda.png" alt="Cem Seyda" class="person-face-photo">
@@ -206,9 +207,8 @@
 
 We are always looking for talented and motivated researchers to join the lab.
 
-- We welcome inquiries from prospective postdocs interested in development, single-cell genomics, and quantitative biology.
+- Postdocs should reach out directly with a CV and brief statement of proposed research.
 - Prospective graduate students should apply through the [EMBL International PhD Program](https://www.embl.org/about/info/embl-international-phd-programme/)
-- Postdocs should reach out directly with a CV and brief statement of research interests
 
 ---
 
