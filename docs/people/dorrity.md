@@ -11,12 +11,12 @@
 <div class="person-profile-body">
 
 <nav class="person-profile-links">
-  <a href="mailto:your.email@institution.edu" class="person-profile-link">Email</a>
+  <a href="mailto:mailto:michael.dorrity@embl.de" class="person-profile-link">Email</a>
   <!-- Uncomment and fill in as applicable: -->
   <!-- <a href="path/to/cv.pdf" class="person-profile-link">CV</a> -->
   <!-- <a href="https://twitter.com/..." class="person-profile-link">Twitter</a> -->
   <!-- <a href="https://github.com/..." class="person-profile-link">GitHub</a> -->
-<a href="hhttps://scholar.google.com/citations?user=k8cKuy0AAAAJ&hl=en&oi=ao" class="person-profile-link">Google Scholar</a>
+<a href="https://scholar.google.com/citations?user=k8cKuy0AAAAJ&hl=en&oi=ao" class="person-profile-link">Google Scholar</a>
 </nav>
 
 <div class="person-profile-content">

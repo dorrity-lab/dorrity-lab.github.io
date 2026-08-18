@@ -214,11 +214,11 @@ We are always looking for talented and motivated researchers to join the lab.
 
 ## Alumni
 
-**Mantha Lamprousi** — PhD Student<br>
-**Eric Laudemann** — Masters Thesis Student<br>
-**Marie Becker** — Intern<br>
-**Aishwarya Girish** — Intern<br>
-**Augustin Auvergne** — Intern<br>
+**Mantha Lamprousi** — PhD Student -> now @Freiburg <br>
+**Eric Laudemann** — Masters Thesis Student -> now @EMBL-HD <br>
+**Marie Becker** — Intern -> now @ETH-Zürich<br>
+**Aishwarya Girish** — Intern -> now @Uni Heidelberg<br>
+**Augustin Auvergne** — Intern -> now @Sanofi<br>
 **Marjane Habibi** — Intern<br>
 **Deep Patel** — Intern<br>
 **Karishma Behera** — Intern

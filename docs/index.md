@@ -10,9 +10,9 @@
 [Publications →](publications.md){ .md-button }
 
 <figure class="fig-frame">
-  <img src="assets/images/research/opp-retina-will.png" alt="Medaka retina, protein synthesis levels ">
+  <img src="assets/images/research/jaw-cna.png" alt="zebrafish collagen">
   <figcaption class="fig-caption">
-    <span>fig. 01 — medaka retina,  protein synthesis levels </span>
+    <span>zebrafish collagen, M. Lamprousi </span>
     <span>Dorrity lab / EMBL</span>
   </figcaption>
 </figure>
