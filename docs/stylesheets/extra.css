@@ -15,7 +15,7 @@
   --dl-green: #03712a;
   --dl-green-hover: #025e23;
 
-  /* the developmental-time colormap from the lab's own umaps */
+  /* the developmental-time colormap from iconic time-series data */
   --dl-timebar: linear-gradient(90deg, #d64541, #f39b3b, #e8d44d, #6fbf4e, #2ba59a, #3b5bd6);
 
   /* type roles */
@@ -95,8 +95,8 @@ body,
 }
 
 .md-header__button.md-logo img {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
   max-width: none;
 }
 
@@ -104,7 +104,7 @@ body,
 .md-header__inner {
   display: flex;
   align-items: center;
-  padding: 0.4rem 2.5rem;
+  padding: 0.1rem 2.5rem;
   max-width: none;
 }
 
@@ -112,7 +112,7 @@ body,
   font-family: var(--dl-sans);
   font-stretch: 112%;
   font-weight: 650;
-  font-size: 1.15rem;
+  font-size: 1.40rem;
   letter-spacing: -0.01em;
   color: var(--dl-ink);
 }
@@ -165,8 +165,8 @@ body,
 
 .md-header__nav a {
   font-family: var(--dl-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
+  font-size: 0.90rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--dl-muted);
   text-decoration: none;
@@ -175,6 +175,7 @@ body,
 
 .md-header__nav a:hover {
   color: var(--dl-green);
+  font-weight: 500;
 }
 
 .md-header__nav a.active {
