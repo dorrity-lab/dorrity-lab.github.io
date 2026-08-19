@@ -217,7 +217,7 @@ We are always looking for talented and motivated researchers to join the lab.
 
 ## Alumni
 
-**Mantha Lamprousi** — PhD Student -> now @Freiburg <br>
+**Mantha Lamprousi** — PhD Student -> now @Uni Freiburg <br>
 **Eric Laudemann** — Masters Thesis Student -> now @EMBL-HD <br>
 **Marie Becker** — Intern -> now @ETH-Zürich<br>
 **Aishwarya Girish** — Intern -> now @Uni Heidelberg<br>

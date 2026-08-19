@@ -58,7 +58,7 @@ We aim to quantify reproducibility of development by building statistical models
 
 ### Technology Development
 
-Using combinatorial-indexing based readouts, we build tools that profile cellular properties beyond gene expression and chromatin state, enable measurement of individual-to-individual variability, and capture temporal dynamics of cells.
+Using combinatorial-indexing, we build tools that profile cellular properties beyond gene expression and chromatin state, enable measurement of individual-to-individual variability, and capture temporal dynamics of cells.
 
 <img src="../assets/images/research/embryo1-ch1-raw.png" alt="trajectory">   
 

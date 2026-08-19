@@ -5,17 +5,18 @@
   <h2 class="hero-headline">Temporal robustness in development</h2>
   <p class="hero-sub">We uncover the molecular and cellular sources of robustness in development — how embryos keep time across cells, temperatures, and species. </p>
 </div>
-
 [Research →](research.md){ .md-button }
 [Publications →](publications.md){ .md-button }
 
-<figure class="fig-frame" style="margin: 0;">
+
+
+<figure class="fig-frame" style="margin: 0; width: 100%;">
   <video autoplay muted loop playsinline style="width: 100%; border-radius: 2px;">
     <source src="assets/videos/arut-movie.mp4" type="video/mp4">
   </video>
   <figcaption class="fig-caption">
     <span>M. Benton</span>
-    <span>Dorrity lab / EMBL</span>
+    <span>EMBL</span>
   </figcaption>
 </figure>
 
@@ -51,6 +52,6 @@
   <img src="assets/images/research/jaw-cna.png" alt="zebrafish collagen">
   <figcaption class="fig-caption">
     <span>M. Lamprousi </span>
-    <span>Dorrity lab / EMBL</span>
+    <span>Dorrity Lab / EMBL</span>
   </figcaption>
 </figure>
