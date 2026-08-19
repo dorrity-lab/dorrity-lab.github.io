@@ -9,7 +9,7 @@
     <div class="pi-hero-links">
       <a href="dorrity/" class="pi-hero-link-btn">Bio</a>
       <a href="../assets/docs/dorrity_cv.pdf" class="pi-hero-link-btn">CV</a>
-      <a href="https://scholar.google.com/citations?user=k8cKuy0AAAAJ&hl=en&oi=ao" class="pi-hero-link-btn">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=k8cKuy0AAAAJ&hl=en&oi=ao" class="pi-hero-link-btn">Scholar</a>
       <a href="mailto:michael.dorrity@embl.de" class="pi-hero-link-btn">Email</a>
     </div>
   </div>
