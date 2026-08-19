@@ -129,6 +129,7 @@
   </div>
 </a>
 
+<!--
 <a href="hsing/" class="person-face-card">
   <div class="person-face-inner">
     <img src="../assets/images/people/placeholder.svg" alt="Jeni Hsing" class="person-face-photo">
@@ -139,7 +140,7 @@
   </div>
 </a>
 
-<a href="hsing/" class="person-face-card">
+<a href="espinosa/" class="person-face-card">
   <div class="person-face-inner">
     <img src="../assets/images/people/placeholder.svg" alt="Lot Hernandez Espinosa" class="person-face-photo">
     <div class="person-face-overlay">
@@ -148,6 +149,8 @@
     </div>
   </div>
 </a>
+
+ -->
 
 <a href="seyda/" class="person-face-card">
   <div class="person-face-inner">

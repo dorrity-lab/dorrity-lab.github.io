@@ -30,6 +30,13 @@ Development is remarkably robust, but environmental stressors like temperature c
 We seek to understand why some cell types are more sensitive to temperature than others ([Bourn & Dorrity, 2024](https://www.sciencedirect.com/science/article/pii/S0959437X24000042), [Vaidya et al, 2026](https://www.biorxiv.org/content/10.64898/2026.06.29.735214v1.abstract)). Molecular mechanisms underlying temperature sensitivity contribute to overall developmental robustness and harnessing these mechanisms enables engineering or tuning of temperature sensitivity in developmental systems.
 
 <img src="../assets/images/research/sheath-tube.png" alt="sheath-er-collagen" class="feature-image-large" style="max-width: 100%;">
+
+<div class="image-gallery">
+  <img src="../assets/images/research/opp-retina-will.png" alt="retina protein">
+  <img src="../assets/images/research/notochord-trajectory-pca-time.png" alt="trajectory">
+  <img src="../assets/images/research/jaw-muscle.png" alt="jaw muscle">
+</div>
+
  
 ---
 ### Variability to Phenotype
@@ -46,7 +53,7 @@ We aim to quantify reproducibility of development by building statistical models
 <img src="../assets/images/research/meso-umap-3d-time.png" alt="temporal-UMAP">
 
 </div>
-
+<img src="../assets/images/research/cell-proportions.png" alt="sheath-er-collagen" class="feature-image-large" style="max-width: 100%;">
 ---
 
 ### Technology Development
