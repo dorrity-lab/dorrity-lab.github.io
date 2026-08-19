@@ -1,6 +1,6 @@
 site_name: Dorrity Lab
 site_author: Michael Dorrity
-site_description: Developmental Biology Research
+site_description: Timing and Robustness
 
 nav:
   - Research: research.md

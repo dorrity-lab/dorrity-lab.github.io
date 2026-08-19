@@ -9,10 +9,12 @@
 [Research →](research.md){ .md-button }
 [Publications →](publications.md){ .md-button }
 
-<figure class="fig-frame">
-  <img src="assets/images/research/jaw-cna.png" alt="zebrafish collagen">
+<figure class="fig-frame" style="margin: 0;">
+  <video autoplay muted loop playsinline style="width: 100%; border-radius: 2px;">
+    <source src="assets/videos/arut-movie.mp4" type="video/mp4">
+  </video>
   <figcaption class="fig-caption">
-    <span>zebrafish collagen, M. Lamprousi </span>
+    <span>M. Benton</span>
     <span>Dorrity lab / EMBL</span>
   </figcaption>
 </figure>
@@ -44,3 +46,11 @@
     <span class="pub-journal mono">Cell</span>
   </div>
 </div>
+
+<figure class="fig-frame">
+  <img src="assets/images/research/jaw-cna.png" alt="zebrafish collagen">
+  <figcaption class="fig-caption">
+    <span>M. Lamprousi </span>
+    <span>Dorrity lab / EMBL</span>
+  </figcaption>
+</figure>
