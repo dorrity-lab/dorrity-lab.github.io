@@ -1,0 +1,956 @@
+/* ===================================================================
+   dorrity lab — v2: contemporary / austere
+   archivo (variable width) + ibm plex mono annotation layer
+   signature: developmental-time hairline under the header
+   =================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  /* palette: paper, ink, and one institutional green */
+  --dl-paper: #fbfbf9;
+  --dl-ink: #17191b;
+  --dl-muted: #63676c;
+  --dl-hairline: #e5e4e0;
+  --dl-green: #03712a;
+  --dl-green-hover: #025e23;
+
+  /* the developmental-time colormap from iconic time-series data */
+  --dl-timebar: linear-gradient(90deg, #d64541, #f39b3b, #e8d44d, #6fbf4e, #2ba59a, #3b5bd6);
+
+  /* type roles */
+  /* type possibles = Archivo, Optima, Charter  */
+  --dl-sans: "Charter", -apple-system, sans-serif;
+  /* --dl-sans: "Optima", -apple-system, sans-serif; */
+  --dl-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* legacy variable names kept so older snippets don't break */
+  --dl-bg-light: var(--dl-paper);
+  --dl-bg-white: #ffffff;
+  --dl-text-dark: var(--dl-ink);
+  --dl-text-medium: var(--dl-muted);
+  --dl-text-light: var(--dl-muted);
+  --dl-border: var(--dl-hairline);
+  --dl-accent: var(--dl-ink);
+}
+
+/* -------------------------------------------------------------------
+   base
+   ------------------------------------------------------------------- */
+
+body,
+.md-typeset {
+  font-family: var(--dl-sans);
+}
+
+.md-typeset {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--dl-ink);
+}
+
+.md-main,
+.md-content {
+  background-color: var(--dl-paper);
+}
+
+/* mono annotation utility — reusable in markdown via attr_list */
+.mono,
+.dl-eyebrow {
+  font-family: var(--dl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+}
+
+/* -------------------------------------------------------------------
+   header — paper white, hairline, time-gradient signature
+   ------------------------------------------------------------------- */
+
+.md-header {
+  background-color: var(--dl-paper);
+  color: var(--dl-ink);
+  box-shadow: none;
+  border-bottom: 1px solid var(--dl-hairline);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+/* signature element: developmental-time hairline */
+.md-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: var(--dl-timebar);
+  z-index: 1;
+}
+
+.md-header__button.md-logo {
+  padding: 0.2rem;
+}
+
+.md-header__button.md-logo img {
+  width: 3.6rem;
+  height: 3.6rem;
+  max-width: none;
+}
+
+/* full-width header: logo flush left, nav flush right */
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 2.5rem;
+  max-width: none;
+}
+
+.md-header__title {
+  font-family: var(--dl-sans);
+  font-stretch: 112%;
+  font-weight: 650;
+  font-size: 1.40rem;
+  letter-spacing: -0.01em;
+  color: var(--dl-ink);
+}
+
+/* -------------------------------------------------------------------
+   navigation — tabs below header, no sidebar
+   ------------------------------------------------------------------- */
+
+/* hide the tabs bar entirely — we'll put nav in the header via override */
+.md-tabs {
+  display: none;
+}
+
+/* hide both sidebars */
+.md-sidebar {
+  display: none !important;
+  width: 0 !important;
+}
+
+.md-search {
+  display: none;
+}
+
+/* hide the repo link from header */
+.md-header__source {
+  display: none;
+}
+
+/* content centered with max-width */
+.md-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* header nav links (injected via custom partial) */
+.md-header__nav {
+  display: flex;
+  gap: 1.8rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.md-header__nav a {
+  font-family: var(--dl-mono);
+  font-size: 0.90rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.md-header__nav a:hover {
+  color: var(--dl-green);
+  font-weight: 500;
+}
+
+.md-header__nav a.active {
+  color: var(--dl-ink);
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------------
+   typography
+   ------------------------------------------------------------------- */
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: var(--dl-sans);
+  color: var(--dl-ink);
+}
+
+.md-typeset h1 {
+  display: none; /* page titles handled by hero/eyebrow layer */
+}
+
+.md-typeset h2 {
+  font-stretch: 114%;
+  font-weight: 640;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin-top: 1.6em;
+}
+
+.md-typeset h3 {
+  font-stretch: 110%;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset p {
+  color: var(--dl-ink);
+  line-height: 1.55;
+}
+
+.md-typeset a {
+  color: var(--dl-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--dl-hairline);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.md-typeset a:hover {
+  color: var(--dl-green);
+  text-decoration-color: var(--dl-green);
+}
+
+/* section dividers */
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid var(--dl-hairline);
+  margin: 3rem 0;
+}
+
+/* code blocks — plex mono on paper, hairline border */
+.md-typeset code,
+.md-typeset pre > code {
+  font-family: var(--dl-mono);
+  background-color: #ffffff;
+  border: 1px solid var(--dl-hairline);
+  color: var(--dl-ink);
+}
+
+/* -------------------------------------------------------------------
+   buttons — mono outline, no fills
+   ------------------------------------------------------------------- */
+
+.md-typeset .md-button {
+  font-family: var(--dl-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--dl-ink) !important;
+  background-color: transparent;
+  border: 1px solid var(--dl-ink);
+  border-radius: 2px;
+  padding: 0.55rem 1.1rem;
+  text-decoration: none !important;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.md-typeset .md-button:hover {
+  color: var(--dl-green) !important;
+  background-color: transparent;
+  border-color: var(--dl-green);
+}
+
+/* -------------------------------------------------------------------
+   landing page — hero block + figure system
+   ------------------------------------------------------------------- */
+
+.hero-block {
+  padding: 3.2rem 0 1.6rem;
+  max-width: 52rem;
+}
+
+.hero-eyebrow {
+  font-family: var(--dl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+  margin-bottom: 1.2rem;
+}
+
+.md-typeset .hero-headline {
+  display: block !important;
+  font-family: var(--dl-sans);
+  font-stretch: 118%;
+  font-weight: 680;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--dl-ink);
+  margin: 0 0 1.4rem !important;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--dl-muted);
+  max-width: 36rem;
+}
+
+/* figure frame: full-width image + mono caption row */
+.fig-frame {
+  margin: 2rem 0 3rem;
+}
+
+.fig-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+}
+
+.fig-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--dl-hairline);
+  margin-top: 0.5rem;
+  font-family: var(--dl-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--dl-muted);
+}
+
+/* legacy landing hero kept working, restyled quietly */
+.landing-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+}
+
+.landing-hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.landing-hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 1.6rem;
+  background: linear-gradient(to top, rgba(23, 25, 27, 0.82), rgba(23, 25, 27, 0));
+}
+
+.landing-hero-overlay h2 {
+  font-stretch: 116%;
+  font-weight: 660;
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
+  color: #fbfbf9;
+  margin: 0 0 0.4rem !important;
+  display: block !important;
+}
+
+.landing-hero-overlay p {
+  font-size: 0.95rem;
+  color: rgba(251, 251, 249, 0.85);
+  margin: 0;
+  max-width: 700px;
+}
+
+/* -------------------------------------------------------------------
+   index — selected publications (compact pub-rows)
+   ------------------------------------------------------------------- */
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.pub-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 10rem;
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--dl-hairline);
+  align-items: baseline;
+}
+
+.pub-year {
+  color: var(--dl-muted);
+}
+
+.md-typeset .pub-title {
+  font-weight: 560;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.pub-title a {
+  color: var(--dl-ink) !important;
+  text-decoration: none !important;
+}
+
+.pub-title a:hover {
+  color: var(--dl-green) !important;
+}
+
+.pub-authors {
+  color: var(--dl-muted);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+.pub-journal {
+  color: var(--dl-muted);
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .pub-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .pub-journal {
+    text-align: left;
+  }
+}
+
+/* -------------------------------------------------------------------
+   publications — hairline rows instead of boxes
+   ------------------------------------------------------------------- */
+
+.paper-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 1rem;
+}
+
+.paper-year-group {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0;
+  border-top: 1px solid var(--dl-hairline);
+  padding-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.paper-year-label {
+  font-family: var(--dl-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--dl-muted);
+  padding-top: 0.3rem;
+}
+
+.paper-year-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.paper-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.2rem;
+  padding: 1.1rem 0;
+  align-items: start;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--dl-hairline);
+  border-radius: 0;
+  transition: none;
+}
+
+.paper-card:last-child {
+  border-bottom: none;
+}
+
+.paper-card:not(:has(.paper-thumbnail)) {
+  grid-template-columns: 1fr;
+}
+
+.paper-card:hover {
+  box-shadow: none;
+}
+
+.paper-thumbnail {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid var(--dl-hairline);
+  background: #ffffff;
+}
+
+.paper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.paper-title {
+  font-size: 1rem;
+  font-stretch: 106%;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--dl-ink);
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3;
+}
+
+.paper-authors {
+  font-size: 0.8rem;
+  color: var(--dl-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.paper-journal {
+  font-family: var(--dl-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--dl-muted);
+  margin: 0;
+}
+
+.paper-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.paper-link {
+  font-family: var(--dl-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dl-ink) !important;
+  text-decoration: none !important;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--dl-ink);
+  border-radius: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.paper-link:hover {
+  background-color: transparent;
+  color: var(--dl-green) !important;
+  border-color: var(--dl-green);
+}
+
+@media (max-width: 768px) {
+  .paper-card {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-thumbnail {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .paper-year-group {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-year-label {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* -------------------------------------------------------------------
+   people — pi hero + grid with always-visible mono labels
+   ------------------------------------------------------------------- */
+
+.pi-hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.6rem;
+  align-items: start;
+  margin: 1.5rem 0;
+  max-width: 960px;
+}
+
+.pi-hero-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.pi-hero-name {
+  font-stretch: 112%;
+  font-weight: 660;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--dl-ink);
+  margin: 0 0 0.15rem !important;
+}
+
+.pi-hero-role {
+  font-family: var(--dl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+  margin: 0 0 0.7rem;
+}
+
+.pi-hero-bio {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--dl-ink);
+  margin: 0 0 0.4rem;
+}
+
+.pi-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.pi-hero-link-btn {
+  font-family: var(--dl-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-ink) !important;
+  text-decoration: none !important;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--dl-ink);
+  border-radius: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.pi-hero-link-btn:hover {
+  background-color: transparent;
+  color: var(--dl-green) !important;
+  border-color: var(--dl-green);
+}
+
+.people-grid-faces {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 960px;
+  gap: 18px;
+  margin: 2rem 0;
+}
+
+a.person-face-card {
+  display: block;
+  text-decoration: none !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.person-face-inner {
+  width: 100%;
+  position: relative;
+}
+
+.person-face-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+  filter: saturate(0.78);
+  transition: filter 0.2s ease;
+}
+
+a.person-face-card:hover .person-face-photo {
+  filter: saturate(1);
+}
+
+/* labels always visible below the photo — no hover required */
+.person-face-overlay {
+  position: static;
+  padding: 0.55rem 0 0;
+  background: none;
+  opacity: 1;
+  display: block;
+}
+
+.person-face-overlay p.person-face-name {
+  font-size: 0.85rem;
+  font-weight: 560;
+  color: var(--dl-ink) !important;
+  margin: 0 0 0.1rem;
+  line-height: 1.3;
+}
+
+.person-face-overlay p.person-face-role {
+  font-family: var(--dl-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--dl-muted) !important;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .people-grid-faces {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+.people-section-heading {
+  grid-column: 1 / -1;
+  margin: 1.5rem 0 0.3rem;
+  font-family: var(--dl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+  border-bottom: 1px solid var(--dl-hairline);
+  padding-bottom: 0.4rem;
+}
+
+/* -------------------------------------------------------------------
+   person profile pages
+   ------------------------------------------------------------------- */
+
+.person-profile {
+  margin-top: 1rem;
+}
+
+.person-profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.person-profile-photo {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  border: 1px solid var(--dl-hairline);
+}
+
+.person-profile-header-text h1 {
+  display: block !important;
+  font-stretch: 112%;
+  font-weight: 660;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.3rem !important;
+  padding-top: 0.25rem;
+}
+
+.person-profile-role {
+  font-family: var(--dl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted);
+  margin: 0;
+}
+
+.person-profile-body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.person-profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.person-profile-link {
+  font-family: var(--dl-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-muted) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+
+.person-profile-link:hover {
+  color: var(--dl-green) !important;
+}
+
+.person-profile-content p {
+  line-height: 1.65;
+  color: var(--dl-ink);
+}
+
+@media (max-width: 600px) {
+  .person-profile-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .person-profile-header {
+    flex-direction: column;
+  }
+}
+
+/* -------------------------------------------------------------------
+   research page
+   ------------------------------------------------------------------- */
+
+.research-hero {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 2px;
+}
+
+.research-section {
+  margin-top: 3rem;
+}
+
+.research-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.research-two-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid var(--dl-hairline);
+  transition: none;
+}
+
+.image-gallery img:hover {
+  transform: none;
+}
+
+.image-gallery-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.image-gallery-2col img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid var(--dl-hairline);
+}
+
+.feature-image-large {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: 2px;
+}
+
+/* faded paga background kept, slightly quieter */
+.research-bg {
+  position: relative;
+}
+
+.research-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../assets/images/research/paga-empty.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .research-two-col,
+  .image-gallery,
+  .image-gallery-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------------
+   footer + general
+   ------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.md-footer__inner {
+  display: none;
+}
+
+.md-footer {
+  background-color: var(--dl-paper);
+  color: var(--dl-muted);
+  border-top: 1px solid var(--dl-hairline);
+  font-family: var(--dl-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
