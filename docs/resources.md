@@ -4,6 +4,8 @@
 ---
 ## Data
 
+<!-- 
+
 ### Developmental Atlas of Medaka (DAM)
 
 A comprehensive single-cell atlas of medaka embryonic development, featuring time-series data across multiple developmental stages.
@@ -32,6 +34,6 @@ A comprehensive single-cell atlas of medaka embryonic development, featuring tim
 
 **Citation:**  [Saunders, Srivatsan, et al. _Nature_ (2023).](https://www.nature.com/articles/s41586-023-06720-2)
 
-
+-->
 
 ---

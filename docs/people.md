@@ -172,6 +172,7 @@
   </div>
 </a>
 
+
 <a href="tarcsa/" class="person-face-card">
   <div class="person-face-inner">
     <img src="../assets/images/people/Virag_Tarcsa.jpg" alt="Virag Tarcsa" class="person-face-photo">
@@ -181,6 +182,7 @@
     </div>
   </div>
 </a>
+
 
 <a href="ishibashi/" class="person-face-card">
   <div class="person-face-inner">
