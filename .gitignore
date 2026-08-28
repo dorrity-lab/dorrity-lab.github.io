@@ -2,6 +2,7 @@
 # local build output — the site is built by ci, never committed to main
 site/
 .cache/
+.venv-mkdocs/
 
 # Python
 __pycache__/
