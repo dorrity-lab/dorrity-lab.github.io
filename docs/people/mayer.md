@@ -11,12 +11,12 @@
 <div class="person-profile-body">
 
 <nav class="person-profile-links">
-  <a href="mailto:email@embl.de" class="person-profile-link">Email</a>
+  <a href="mailto:marvin.mayer@embl.de" class="person-profile-link">Email</a>
 </nav>
 
 <div class="person-profile-content">
 
-Investigating how cells coordinate their behavior to stay in sync during development and how this synchrony shapes tissue organization. Beyond the lab, he enjoys discovering new places, catching up with friends, and taking in Heidelberg’s lively atmosphere. Testing to see if I can edit something. 
+Investigating how cells coordinate their behavior to stay in sync during development and how this synchrony shapes tissue organization. Beyond the lab, he enjoys discovering new places, catching up with friends, and taking in Heidelberg’s lively atmosphere. 
 
 </div>
 

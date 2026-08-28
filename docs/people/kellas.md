@@ -11,7 +11,7 @@
 <div class="person-profile-body">
 
 <nav class="person-profile-links">
-  <a href="mailto:email@embl.de" class="person-profile-link">Email</a>
+  <a href="mailto:william.kellas@embl.de" class="person-profile-link">Email</a>
 </nav>
 
 <div class="person-profile-content">
