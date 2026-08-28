@@ -11,7 +11,7 @@
 <div class="person-profile-body">
 
 <nav class="person-profile-links">
-  <a href="mailto:mailto:michael.dorrity@embl.de" class="person-profile-link">Email</a>
+  <a href="mailto:michael.dorrity@embl.de" class="person-profile-link">Email</a>
   <!-- Uncomment and fill in as applicable: -->
   <!-- <a href="path/to/cv.pdf" class="person-profile-link">CV</a> -->
   <!-- <a href="https://twitter.com/..." class="person-profile-link">Twitter</a> -->
