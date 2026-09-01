@@ -1,7 +1,7 @@
 <div class="person-profile">
 
 <div class="person-profile-header">
-  <img src="../assets/images/people/Yagya_Purohit.jpg" alt="Yagya Purohit" class="person-profile-photo">
+  <img src="../../assets/images/people/Yagya_Purohit.jpg" alt="Yagya Purohit" class="person-profile-photo">
   <div class="person-profile-header-text">
     <h1>Yagya Purohit</h1>
     <p class="person-profile-role">Masters Student</p>
