@@ -16,7 +16,7 @@
 
 <div class="person-profile-content">
 
-I am currently working on a project to temporally sequence a cell’s transcriptome without destroying it. When I am off the clock, you can find me with a book, a coffee, dreaming about the ocean or shopping for my next vacation. Science aur Sahitya – that’s basically me
+I am currently working on a project to temporally sequence a cell’s transcriptome without destroying it. When I am off the clock, you can find me with a book, a coffee, dreaming about the ocean or shopping for my next vacation. Science aur Sahitya – that’s basically me.
 
 </div>
 
