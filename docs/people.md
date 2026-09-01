@@ -186,7 +186,7 @@
 
 <a href="purohit/" class="person-face-card">
   <div class="person-face-inner">
-    <img src="../../assets/images/people/Yagya_Purohit.jpg" alt="Yagya Purohit" class="person-face-photo">
+    <img src="../assets/images/people/Yagya_Purohit.jpg" alt="Yagya Purohit" class="person-face-photo">
     <div class="person-face-overlay">
       <p class="person-face-name">Yagya Purohit</p>
       <p class="person-face-role">Masters Student</p>
