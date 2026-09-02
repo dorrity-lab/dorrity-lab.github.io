@@ -1,0 +1,231 @@
+/* ===================================================================
+   VIDEO BACKGROUNDS
+   Subtle, slowed-down video backgrounds for visual interest
+   =================================================================== */
+
+/* Video Hero Banner - Full width with overlay */
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: -1rem -1rem 2rem -1rem;
+  overflow: hidden;
+}
+
+.video-hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.6;  /* Make it subtle */
+  filter: blur(2px) brightness(0.7);  /* Fuzzy and darkened */
+}
+
+/* Text overlay for video backgrounds */
+.video-hero .hero-text-overlay {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-hero .hero-text-overlay h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.video-hero .hero-text-overlay p {
+  color: white;
+  font-size: 1.3rem;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Contained video background */
+.video-contained {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.video-contained video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.5;
+  filter: blur(3px) brightness(0.8);
+}
+
+/* Light background video - for darker content */
+.video-light {
+  filter: blur(4px) brightness(1.2) !important;
+  opacity: 0.3 !important;
+}
+
+/* Strong blur for more abstract feel */
+.video-blur-strong {
+  filter: blur(8px) brightness(0.7) !important;
+}
+
+/* Minimal blur - keep detail visible */
+.video-blur-minimal {
+  filter: blur(1px) brightness(0.8) !important;
+}
+
+/* Side-by-side: video on one side, content on other */
+.video-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 2rem 0;
+  height: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.video-split video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.video-split .content-side {
+  padding: 3rem;
+  background: var(--dl-bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Inline video - normal video player */
+.video-inline {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Video grid - multiple videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.video-grid video {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--dl-border);
+}
+
+/* Fullscreen section background */
+.section-with-video-bg {
+  position: relative;
+  min-height: 400px;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.section-with-video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+.section-with-video-bg .content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Autoplay optimization - muted videos */
+video[autoplay] {
+  /* Ensure videos can autoplay (must be muted) */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-hero,
+  .video-contained {
+    height: 300px;
+  }
+
+  .video-hero .hero-text-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .video-hero .hero-text-overlay p {
+    font-size: 1rem;
+  }
+
+  .video-split {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .video-split video {
+    height: 250px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* READY-MADE COMBINATIONS */
+
+/* Subtle developmental video hero */
+.video-hero-subtle video {
+  opacity: 0.4;
+  filter: blur(4px) brightness(0.9) grayscale(20%);
+}
+
+/* Dramatic video hero */
+.video-hero-dramatic video {
+  opacity: 0.7;
+  filter: blur(1px) brightness(0.5) contrast(1.1);
+}
+
+/* Abstract fuzzy background */
+.video-hero-abstract video {
+  opacity: 0.3;
+  filter: blur(10px) brightness(1.1);
+}
