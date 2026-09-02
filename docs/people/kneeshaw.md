@@ -1,7 +1,7 @@
 <div class="person-profile">
 
 <div class="person-profile-header">
-  <img src="../../assets/images/people/Sophie_Kneeshaw.jpg" alt="Sophie Kneeshaw" class="person-profile-photo">
+  <img src="../../assets/images/people/kneeshaw.jpg" alt="Sophie Kneeshaw" class="person-profile-photo">
   <div class="person-profile-header-text">
     <h1>Sophie Kneeshaw</h1>
     <p class="person-profile-role">Lab Officer</p>
